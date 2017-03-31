@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <title>台山最前线</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/font.css">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/bbs/controller.js"></script>
+    <script src="js/controllers/life/controller.js"></script>
+    <script src="js/controllers/news/controller.js"></script>
+    <script src="js/controllers/user/controller.js"></script>
+    <script src="js/controllers/message/controller.js"></script>
+    <script src="js/newsShow.js"></script>
+    <!--<script src="node_modules/jquery/dist/jquery.js"></script>-->
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+
+</head>
+<body style="overflow:scroll;overflow-x:hidden"  ng-app="myApp" to-top2>
+    <!--头部通栏部分-->
+    <header id="topBar">
+        <div id="topBarBox">
+            <a href="#" id="logo"><img src="images/1.png" alt=""></a>
+            <p id="allTitle">台山最新前线</p>
+            <a href="#" id="fabu"class="icon-search"></a>
+        </div>
+    </header>
+
+    <!--中间部分-->
+
+    <div class="ddd" ng-view></div>
+
+    <!--底部导航栏部分-->
+    <footer id="footer">
+        <div id="footerBox">
+            <a href="#/news" id="news" ><p class="icon-file-text icon"></p><div>新闻</div></a>
+            <a href="#/bbs" id="bbs" ><p class="icon-bubbles3 icon"></p><div>论坛</div></a>
+            <a href="#/life" id="life" ><p class="icon-joomla icon"></p><div>生活</div></a>
+            <a href="#/user" id="user" ><p class="icon-user icon"></p><div>个人</div></a>
+
+        </div>
+    </footer>
+
+    <!--小火箭的版块-->
+    <div to-top>
+        <div  id="toTop">
+            <div class="icon-arrow-up"></div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+

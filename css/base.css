@@ -1,0 +1,1023 @@
+
+/********************************公共版块的样式*************************************/
+*,
+::after,
+::before{
+
+    padding: 0;
+    margin: 0;
+
+    /*清除ios默认的点击时产生的高亮区块   rgba(0,0,0,0)*/
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color:transparent;
+    /*定义盒子模型定义的宽度从边框计算*/
+    -webkit-box-sizing: border-box;
+
+}
+body{
+    font-family: "Microsoft YaHei" , "sans-serif";
+    font-size: 14px;
+    line-height: 1;
+    color: #333;
+    position: relative;
+    background: #f5f5f5;
+    /*overflow: scroll;*/
+    overflow: auto;
+    overflow-y: hidden;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+input,textarea{
+    border:0;
+    outline: none;
+    resize: none;
+
+    /*清楚ios浏览器默认的样式*/
+    -webkit-appearance: none;
+}
+img{
+    vertical-align: middle;/*清除3px的bug*/
+    border: 0;
+}
+.clearfix::after,
+.clearfix::before{
+    clear: both;
+    content: '.';
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    display: block;
+}
+#topBar{
+    width: 100%;
+    height: 48px;
+    background-color: #c00;
+    position: relative;
+}
+#topBar #topBarBox #logo{
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-color: pink;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-left: 7px;
+    overflow: hidden;
+
+}
+#topBar #topBarBox #logo img{
+    width: 100%;
+    height: 100%;
+}
+#topBar #topBarBox  #allTitle{
+    display: block;
+    width: 100%;
+    height: 48px;
+    /*background-color: gold;*/
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 48px;
+
+}
+#topBar #topBarBox #fabu{
+    display: block;
+    width: 34px;
+    height: 34px;
+    /*background-color: pink;*/
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /*border-radius: 50%;*/
+    margin-top: 7px;
+    margin-right: 7px;
+    overflow: hidden;
+    font-size: 24px;
+    text-align: center;
+    line-height: 34px;
+    color: white;
+
+}
+#footer{
+    width: 100%;
+    height: 48px;
+    background-color: #c1c1c1;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+#footer #footerBox{
+    height: 100%;
+    width: 100%;
+}
+#footer #footerBox a{
+    display: block;
+    width: 25%;
+    height: 100%;
+    background-color: #f1f1f1;
+    float: left;
+    text-align: center;
+    color: #808080;
+}
+#footer #footerBox a:hover{
+    color: #c00;
+}
+#footer #footerBox a .icon{
+    height: 75%;
+    width: 100%;
+    font-size: 18px;
+    line-height: 36px;
+
+}
+#footer #footerBox a div{
+    height: 25%;
+    width: 100%;
+    font-size: 10px;
+}
+/*字体引入*/
+.icon-search:before {
+    font-family: icomoon;
+    content: "\e986";
+}
+.icon-file-text:before {
+    font-family: icomoon;
+    content: "\e922";
+}
+.icon-bubbles3:before {
+    font-family: icomoon;
+    content: "\e96f";
+}
+.icon-joomla:before {
+    font-family: icomoon;
+    content: "\eab5";
+}
+.icon-happy:before {
+    font-family: icomoon;
+    content: "\e9df";
+}
+.icon-user:before {
+    font-family: icomoon;
+    content: "\e971";
+}
+.icon-eye:before {
+    font-family: icomoon;
+    content: "\e9ce";
+}
+.icon-heart-broken:before {
+    font-family: icomoon;
+    content: "\e9db";
+}
+.icon-office:before {
+    font-family: icomoon;
+    content: "\e903";
+}
+.icon-cart:before {
+    font-family: icomoon;
+    content: "\e93a";
+}
+.icon-user-tie:before {
+    font-family: icomoon;
+    content: "\e976";
+}
+.icon-truck:before {
+    font-family: icomoon;
+    content: "\e9b0";
+}
+.icon-man-woman:before {
+    font-family: icomoon;
+    content: "\e9de";
+}
+.icon-svg:before {
+    font-family: icomoon;
+    content: "\eae9";
+}
+.icon-arrow-up:before{
+    font-family: icomoon;
+    content: "\ea32";
+}
+
+/********************************小火箭版块的样式*************************************/
+#toTop{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    line-height: 30px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 6px;
+    display: none;
+    z-index: 10001;
+}
+
+/********************************新闻版块的样式*************************************/
+
+#newsContent{
+    width: 100%;
+    /*height: 1000px;*/
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 58px;
+}
+#newsContent #newsShow{
+    width: 100%;
+    height: 200px;
+    /*background-color: pink;*/
+    position: relative;
+}
+#newsContent #newsShow #ShowImg{
+    width: 600%;
+    position: relative;
+    transition: left 0.5s;
+}
+#newsContent #newsShow img{
+    width: 16.666%;
+    height: 200px;
+    background-size:100% 100%;
+    float: left;
+}
+#newsContent #newsShow .ShowController{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 32px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+#newsContent #newsShow .ShowController ol{
+    width: 40%;
+}
+#newsContent #newsShow .ShowController li{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+}
+#newsContent #newsShow .ShowController li:hover{
+    background-color: rgba(255,0,0,0.4);
+}
+#newsContent #newsShow .ShowController .current{
+    background-color: rgba(255,0,0,0.4);
+}
+#newsContent #newsShow #ShowTitle{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0.08) 8%,rgba(0,0,0,0.24) 40%,rgba(0,0,0,0.40) 47%,rgba(0,0,0,0.65) 95%);
+    text-align: center;
+    line-height: 30px;
+    color: #f0f0f0;
+    font-size: 18px;
+    font-weight: 500;
+}
+#newsContent #newsBody {
+    width: 100%;
+    /*height: 500px;*/
+    /*background-color: #e0e0e0;*/
+}
+#newsContent #newsBody #newsModel{
+    width: 100%;
+    height: 30px;
+    /*background-color: pink;*/
+    margin-top: 3px;
+    /*border-top: 1px dashed #c0c0c0;*/
+}
+#newsContent #newsBody #newsModel p{
+    display: block;
+    width: 100px;
+    height: 100%;
+    /*background-color: gold;*/
+    color: #202020;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 5px;
+    border-top: 1px solid #c00;
+    border-bottom: 1px solid #c00;
+    border-left: 10px solid #c00;
+    float: left;
+    margin-right: 10px;
+}
+#newsContent #newsBody #newsList{
+    width: 96%;
+    /*height: 300px;*/
+    margin-left:2%;
+    margin-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    /*border-left: 1px solid #e0e0e0;*/
+}
+#newsContent #newsBody #newsList .newsSum{
+    width: 100%;
+    height: 80px;
+    /*background-color: pink;*/
+    position: relative;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 5px;
+}
+#newsContent #newsBody #newsList .newsSum .newsSumTitle{
+    width: 100%;
+    height: 70%;
+    /*background-color: gold;*/
+    font-size: 16px;
+    padding: 10px;
+    padding-right: 80px;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+#newsContent #newsBody #newsList .newsSum .newsSumImg{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    /*background-color: red;*/
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 100;
+}
+#newsContent #newsBody #newsList .newsSum .newsSumImg img{
+    width: 70px;
+    height: 70px;
+
+}
+#newsContent #newsBody #newsList .newsSum .newsSumBot{
+    width: 100%;
+    height: 30%;
+    /*background-color: #d0d0d0;*/
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    padding: 2px;
+    padding-right: 80px;
+}
+#newsContent #newsBody #newsList .newsSum .newsSumBot div{
+    width: 20%;
+    height: 100%;
+    /*background-color: blue;*/
+    float: left;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #a0a0a0;
+}
+#newsContent #newsBody #newsList .newsSum .newsSumBot div pre{
+    font-size: 8px;
+}
+#newsContent #newsBody #newsList .newsSum .newsSumBot .newsGood{
+    font-size: 10px;
+}
+#newsContent #newsBody #newsList .newsSum .newsSumBot .newsCom{
+    font-size: 10px;
+}
+#newsContent #newsBody #newsList .newsSum .newsSumBot .newsLook{
+
+}
+#newsContent #newsBody #newsList .newsSum .newsSumBot .newsDate{
+    width: 40%;
+    height: 100%;
+    /*background-color: blue;*/
+    float: right;
+    font-size: 10px;
+    line-height: 16px;
+    padding-left: 20px;
+}
+
+/********************************论坛版块的样式*************************************/
+
+#bbsContent{
+    width: 100%;
+    /*height: 1000px;*/
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 58px;
+}
+#bbsContent #bbsNav{
+    width: 100%;
+    background: white;
+    z-index: 1000;
+}
+#bbsContent #bbsNav ul{
+    width: 100%;
+    height: 30px;
+    /*background-color: pink;*/
+}
+#bbsContent #bbsNav ul li{
+    width: 25%;
+    height: 100%;
+    background-color: #e9e9e9;
+    float: left;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+#bbsContent #bbsNav ul li:hover{
+    border-bottom: 2px solid #c00;
+}
+#bbsContent #bbsList{
+    width: 96%;
+    /*height: 300px;*/
+    margin-left:2%;
+    margin-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    /*border-left: 1px solid #e0e0e0;*/
+}
+#bbsContent #bbsList .bbsSum{
+    width: 100%;
+    height: 80px;
+    /*background-color: pink;*/
+    position: relative;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 5px;
+}
+#bbsContent #bbsList .bbsSum .bbsSumTitle{
+    width: 100%;
+    height: 70%;
+    /*background-color: gold;*/
+    font-size: 16px;
+    padding: 10px;
+    padding-right: 80px;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+#bbsContent #bbsList .bbsSum .bbsSumImg{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    /*background-color: red;*/
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 100;
+}
+#bbsContent #bbsList .bbsSum .bbsSumImg img{
+    width: 70px;
+    height: 70px;
+
+}
+#bbsContent #bbsList .bbsSum .bbsSumBot{
+    width: 100%;
+    height: 30%;
+    /*background-color: #d0d0d0;*/
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    padding: 2px;
+    padding-right: 80px;
+}
+#bbsContent #bbsList .bbsSum .bbsSumBot div{
+    width: 20%;
+    height: 100%;
+    /*background-color: blue;*/
+    float: left;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #a0a0a0;
+}
+#bbsContent #bbsList .bbsSum .bbsSumBot div pre{
+    font-size: 8px;
+}
+#bbsContent #bbsList .bbsSum .bbsSumBot .bbsGood{
+    font-size: 10px;
+}
+#bbsContent #bbsList .bbsSum .bbsSumBot .bbsCom{
+    font-size: 10px;
+}
+#bbsContent #bbsList .bbsSum .bbsSumBot .bbsLook{
+
+}
+#bbsContent #bbsList .bbsSum .bbsSumBot .bbsDate{
+    width: 40%;
+    height: 100%;
+    /*background-color: blue;*/
+    float: right;
+    font-size: 10px;
+    line-height: 16px;
+    padding-left: 20px;
+}
+
+/********************************生活版块的样式*************************************/
+
+#lifeContent{
+    width: 100%;
+    background-color: white;
+}
+#lifeContent #lifeBanner{
+    width: 100%;
+    height: 188px;
+    background-color: #e9e9e9;
+}
+#lifeContent #lifeBanner ul{
+    width: 100%;
+    /*padding: 10%;*/
+}
+#lifeContent #lifeBanner ul li{
+    width: 33.33%;
+    height: 94px;
+    /*background-color: pink;*/
+    float: left;
+    text-align: center;
+    line-height: 80px;
+    /*padding-top: 10px;*/
+    position: relative;
+}
+#lifeContent #lifeBanner ul li p{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 25%;
+}
+#lifeContent #lifeBanner ul li pre{
+    display: block;
+    width: 50px;
+    height: 44px;
+    /*background-color: pink;*/
+    position: absolute;
+    top: 50px;
+    left: 19%;
+    line-height: 44px;
+    font-size: 16px;
+    text-align: center;
+}
+#lifeContent #lifeBanner ul .lifeJob p{
+    background-color: #42bbe8;
+}
+#lifeContent #lifeBanner ul .lifeHouse p{
+    background-color: #fd8e35;
+}
+#lifeContent #lifeBanner ul .lifeSecond p{
+    background-color: #6dc243;
+}
+#lifeContent #lifeBanner ul .lifeCar p{
+    background-color: #449fdb;
+}
+#lifeContent #lifeBanner ul .lifeService p{
+    background-color: #ff555b;
+}
+#lifeContent #lifeBanner ul .lifeFriend p{
+    background-color: gold;
+}
+
+#lifeContent #lifeList{
+    width: 100%;
+    /*background-color: pink;*/
+    margin-bottom: 50px;
+}
+#lifeContent #lifeList .lifeSum{
+    width: 98%;
+    /*background-color: gold;*/
+    margin-left: 1%;
+    margin-top: 5px;
+    border: 1px solid #42bbe8;
+    border-radius: 5px;
+}
+#lifeContent #lifeList .lifeSum .lifeSumTop{
+    width: 100%;
+    height: 30px;
+    background-color: #42bbe8;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    padding-left: 5px;
+}
+#lifeContent #lifeList .lifeSum .lifeSumTop h2{
+    float: left;
+}
+#lifeContent #lifeList .lifeSum .lifeSumTop p{
+    float: right;
+}
+
+#lifeContent #lifeList .lifeSum .lifeSumBto{
+    margin-top: 5px;
+    width: 100%;
+    height: 160px;
+}
+#lifeContent #lifeList .lifeSum .lifeSumBto ul{
+    width: 100%;
+    height: 100%;
+}
+#lifeContent #lifeList .lifeSum .lifeSumBto ul li{
+    width: 100%;
+    height: 30px;
+    /*background-color: #e9e9e9;*/
+    margin-top: 2px;
+    padding-left: 10px;
+    line-height: 30px;
+    border-bottom: 1px dashed #c0c0c0;
+}
+#lifeContent #lifeList .lifeSum .lifeSumBto ul li:nth-last-child(1){
+    border-bottom: none;
+}
+
+#lifeContent #lifeList #lifeHouseSum .lifeSumTop{
+     background-color: #fd8e35;
+ }
+#lifeContent #lifeList #lifeSecondSum .lifeSumTop{
+    background-color: #6dc243;
+}
+#lifeContent #lifeList #lifeCarSum .lifeSumTop{
+    background-color: #449fdb;
+}
+#lifeContent #lifeList #lifeServiceSum .lifeSumTop{
+    background-color: #ff555b;
+}
+#lifeContent #lifeList #lifeFriendSum .lifeSumTop{
+    background-color: gold;
+}
+
+#lifeContent #lifeList #lifeHouseSum {
+    border:1px solid #fd8e35;
+}
+#lifeContent #lifeList #lifeSecondSum{
+    border:1px solid #6dc243;
+}
+#lifeContent #lifeList #lifeCarSum {
+    border:1px solid #449fdb;
+}
+#lifeContent #lifeList #lifeServiceSum {
+    border:1px solid #ff555b;
+}
+#lifeContent #lifeList #lifeFriendSum {
+    border:1px solid gold;
+}
+
+/********************************用户版块的样式*************************************/
+
+#userContent{
+    width: 100%;
+    overflow: hidden;
+}
+#userContent #userShow{
+    width: 100%;
+    height: 200px;
+    /*background-color: gold;*/
+}
+#userContent #userShow #userImg{
+    width: 100%;
+    height: 140px;
+    /*background-color: blue;*/
+    background: url("../images/2.jpg") no-repeat;
+    background-size: 100% 140px;
+}
+#userContent #userShow #userImg #userTou{
+    display: block;
+    text-align: center;
+    line-height: 100px;
+}
+#userContent #userShow #userImg #userTou img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+#userContent #userShow #userImg #userId{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+#userContent #userShow #userImg #userId p{
+    background-color: #c55;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 38%;
+}
+
+#userContent #userShow #userDetail{
+    width: 100%;
+    height: 60px;
+    background-color: #e0e0e0;
+}
+#userContent #userShow #userDetail div{
+    width: 25%;
+    height: 100%;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    border-right: 1px dashed #909090;
+    border-bottom: 1px dashed #909090;
+}
+
+#userContent #userTools{
+    width: 100%;
+    height: 300px;
+}
+#userContent #userTools p{
+    display: block;
+    width: 96%;
+    margin-left: 2%;
+    height: 10%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background-color: #c55;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#userContent #userTools h1{
+    height: 150px;
+    text-align: center;
+}
+#userContent #userTools h1 img{
+    width: 150px;
+    height: 100%;
+}
+
+/********************************文章版块的样式*************************************/
+#message{
+    width: 100%;
+    /*height: 1400px;*/
+    background-color: white;
+    margin-bottom: 70px;
+}
+#message #messageTitle{
+
+    width: 100%;
+    height: 40px;
+    /*background-color: red;*/
+    line-height: 30px;
+    background-color:white;
+    text-align: center;
+    padding: 5px;
+}
+
+#message #messageInf{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    /*background-color: #e0e0e0;*/
+}
+#message #messageInf #messageInfDate{
+    height: 100%;
+    width: 50%;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 0px;
+    float: left;
+}
+#message #messageInf #messageInfDate div{
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: right;
+    line-height: 30px;
+}
+#message #messageInf #messageInfDate p{
+    display: block;
+    width: 80%;
+    height: 100%;
+    float: right;
+    text-align: left;
+    font-size: 10px;
+    padding-left: 10px;
+}
+#message #messageInf #messageInfLooks{
+    height: 100%;
+    width: 25%;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: right;
+    float: left;
+    padding-right: 10px;
+}
+#message #messageInf #messageInfLooks div{
+    height: 100%;
+    width: 60%;
+    float: left;
+    line-height: 30px;
+    text-align: right;
+}
+#message #messageInf #messageInfLooks p{
+    display: block;
+    height: 100%;
+    width: 40%;
+    float: right;
+    text-align: left;
+    font-size: 10px;
+    padding-left: 10px;
+}
+#message #messageInf #messageInfAuthor{
+    height: 100%;
+    width: 25%;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: right;
+    float: left;
+    padding-left: 10px;
+}
+#message #messageInf #messageInfAuthor div{
+    height: 100%;
+    width: 20%;
+    float: left;
+    line-height: 30px;
+    text-align: right;
+}
+#message #messageInf #messageInfAuthor p{
+    display: block;
+    height: 100%;
+    width: 80%;
+    float: right;
+    text-align: left;
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+#message #messageContent{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+#message #messageBot{
+    width: 100%;
+    /*height: 100px;*/
+    /*background-color: gold;*/
+}
+#message #messageBot #messageCom{
+    width: 100%;
+    height: 100px;
+    /*background-color: pink;*/
+    border: 1px solid #e0e0e0;
+}
+#message #messageBot #messageCom ul{
+    width: 100%;
+    height: 100%;
+}
+#message #messageBot #messageCom ul li{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    line-height: 33px;
+    text-align: center;
+    font-size: 16px;
+    color: #909090;
+}
+#message #messageBot #messageCom ul li:hover{
+    color: #c00;
+}
+#message #messageBot #messageCom ul li p{
+    display: block;
+    width: 100%;
+    height: 40%;
+    font-size: 30px;
+    line-height: 50px;
+}
+#message #messageBot #messageCom ul li pre{
+    display: block;
+    width: 100%;
+    height: 40%;
+    font-size: 14px;
+    line-height: 14px;
+}
+/*评论区*/
+#message #messageBot #messageComCom{
+    width: 100%;
+    /*height: 300px;*/
+    /*background-color: pink;*/
+    /*background-color: pink;*/
+}
+#message #messageBot #messageComCom  #messageComNav{
+    width: 100%;
+    height: 33px;
+}
+#message #messageBot #messageComCom  #messageComNav ul{
+    width: 100%;
+    height: 100%;
+}
+#message #messageBot #messageComCom #messageComNav ul li{
+    width: 50%;
+    height: 100%;
+    border-left: 2px solid #e0e0e0;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border-bottom: 3px solid white;
+}
+#message #messageBot #messageComCom #messageComNav ul li:hover{
+    border-bottom: 3px solid #c00;
+}
+
+#message #messageBot #messageComCom #messageComContent{
+    width: 100%;
+    margin-top: 10px;
+}
+#message #messageBot #messageComCom #messageComContent ul{
+    width: 100%;
+}
+#message #messageBot #messageComCom #messageComContent ul li{
+    width: 98%;
+    margin-left: 1%;
+    height: 44px;
+    border: 1px solid #e0e0e0;
+    /*border-bottom: 1px dashed #e0e0e0;*/
+    margin-bottom: 15px;
+}
+#message #messageBot #messageComCom #messageComContent ul li img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+#message #messageBot #messageComCom #messageComContent ul .comImg{
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+#message #messageBot #messageComCom #messageComContent ul .comId{
+    width: 60%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    text-align: left;
+}
+
+#message #messageBot #messageComCom #messageComContent ul .comBad{
+    width: 10%;
+    height: 100%;
+    float: right;
+    line-height: 20px;
+}
+#message #messageBot #messageComCom #messageComContent ul .comBad:hover{
+    color: #c00;
+}
+#message #messageBot #messageComCom #messageComContent ul .comBad p{
+    display: block;
+    width: 100%;
+    height: 60%;
+    line-height: 26px;
+    text-align: center;
+}
+#message #messageBot #messageComCom #messageComContent ul .comBad pre{
+    display: block;
+    width: 100%;
+    height: 40%;
+    line-height: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+#message #messageBot #messageComCom #messageComContent ul .comGood{
+    width: 10%;
+    height: 100%;
+    float: right;
+    line-height: 20px;
+}
+#message #messageBot #messageComCom #messageComContent ul .comGood:hover{
+    color: #c00;
+}
+#message #messageBot #messageComCom #messageComContent ul .comGood p{
+    display: block;
+    width: 100%;
+    height: 60%;
+    line-height: 26px;
+    text-align: center;
+}
+#message #messageBot #messageComCom #messageComContent ul .comGood pre{
+    display: block;
+    width: 100%;
+    height: 40%;
+    line-height: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
