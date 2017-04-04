@@ -8,7 +8,7 @@ var conttroller = angular.module('myApp.user', ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
         // console.log(111);
         $routeProvider.when('/user', {
-            templateUrl: 'js/controllers/user/userTmpl.html',
+            templateUrl: '/Test/js/controllers/user/userTmpl.html',
             controller: 'UserController'
         });
     }])
