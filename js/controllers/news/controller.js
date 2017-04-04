@@ -8,7 +8,7 @@ var conttroller = angular.module('myApp.news', ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
         // console.log(111);
         $routeProvider.when('/news', {
-            templateUrl: 'js/controllers/news/newsTmpl.html',
+            templateUrl: '/Test/js/controllers/news/newsTmpl.html',
             controller: 'NewsController'
         });
     }])
