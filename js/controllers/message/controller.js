@@ -8,7 +8,7 @@ var conttroller = angular.module('myApp.message', ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
         // console.log(111);
         $routeProvider.when('/message', {
-            templateUrl: 'js/controllers/message/message.html',
+            templateUrl: '/Test/js/controllers/message/message.html',
             controller: 'MessageController'
         });
     }])
