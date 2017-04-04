@@ -8,7 +8,7 @@ var conttroller = angular.module('myApp.life', ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
         // console.log(111);
         $routeProvider.when('/life', {
-            templateUrl: 'js/controllers/life/lifeTmpl.html',
+            templateUrl: '/Test/js/controllers/life/lifeTmpl.html',
             controller: 'LifeController'
         });
     }])
