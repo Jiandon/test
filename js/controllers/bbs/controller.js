@@ -8,7 +8,7 @@ var conttroller = angular.module('myApp.bbs', ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
         // console.log(111);
         $routeProvider.when('/bbs', {
-            templateUrl: 'js/controllers/bbs/bbsTmpl.html',
+            templateUrl: '/Test/js/controllers/bbs/bbsTmpl.html',
             controller: 'NewsController'
         });
     }])
